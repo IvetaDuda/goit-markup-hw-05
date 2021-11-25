@@ -51,6 +51,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 2;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .is-hidden {
   opacity: 0;
@@ -245,14 +246,13 @@
   justify-content: center;
   fill: #afb1b8;
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1)  ; 
 }
 
 .icon-command-link:hover,
 .icon-command-link:focus {
   fill: var(--primari-white-color);
   background-color: var(--accent-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Постоянные клиенты */
 .clients {
@@ -289,6 +289,7 @@
   box-sizing: border-box;
   border: 1px solid #afb1b8;
   fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 .icon-group {
   width: 106px;
@@ -302,8 +303,6 @@
 .clients-link:focus {
   border: 1px solid var(--accent-color);
   fill: var(--accent-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*..................... Стили для portfolio.html.................... */
@@ -335,6 +334,7 @@
   align-items: center;
   font-family: inherit;
   padding: 6px 22px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-nav-title:hover,
 .button-nav-title:focus {
@@ -342,9 +342,6 @@
   color: var(--primari-white-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .subtitle-box {
   display: flex;
@@ -360,8 +357,6 @@
   box-sizing: border-box;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subtitle-box-small:nth-child(3n + 3) {
@@ -399,6 +394,7 @@
 }
 .subtitle-box-link {
   display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .subtitle-overlay {
   position: relative;
@@ -407,7 +403,7 @@
 .subtitle-overlay::before,
 .overlay {
   transform: translateY(100%);
-  transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .overlay {
   display: inline-block;
