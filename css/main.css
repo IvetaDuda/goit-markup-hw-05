@@ -431,10 +431,10 @@
   background-color: rgba(33, 150, 243, 0.9);
   /* opacity: 0; */
 }
-.subtitle-box-small:hover .subtitle-overlay::before,
-.subtitle-box-small:focus .subtitle-overlay::before,
-.subtitle-box-small:hover .overlay,
-.subtitle-box-small:focus .overlay {
+.subtitle-box-link:hover .subtitle-overlay::before,
+.subtitle-box-link:focus .subtitle-overlay::before,
+.subtitle-box-link:hover .overlay,
+.subtitle-box-link:focus .overlay {
   /* opacity: 1; */
   transform: translateY(0);
 }
